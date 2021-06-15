@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="240" height="30" tilewidth="16" tileheight="16" nextobjectid="265">
+ <tileset firstgid="1" name="Без имени-4 - копия" tilewidth="16" tileheight="16" tilecount="1081" columns="47">
+  <image source="Без имени-4 - копия.jpg" width="754" height="377"/>
+ </tileset>
+ <tileset firstgid="1082" name="Без имени-3 - копия" tilewidth="16" tileheight="16" tilecount="22" columns="2">
+  <image source="Без имени-3 - копия.jpg" width="40" height="177"/>
+ </tileset>
+ <tileset firstgid="1104" name="right" tilewidth="16" tileheight="16" tilecount="16" columns="4">
+  <image source="right.jpg" width="74" height="67"/>
+ </tileset>
+ <tileset firstgid="1120" name="Без имени-5" tilewidth="16" tileheight="16" tilecount="16" columns="4">
+  <image source="Без имени-5.jpg" width="70" height="65"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="240" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztmOluGzEMhDepe6StX6j3nbZJ2vd/m1LICiAIanXuaFHPjw8Dw5ZISZZG1NWyLFeEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhFwQb07L8vb0qEfoh5BL5Fp4Isj2WZ4Kz4TnwgvhZuM37+TD+9Oj9sQf1Q8hMynZR6hYGvv76JcfhI+rag+tVa+fXH4vhVfCa+F8gLUjl43+v9rPW/urNUZuz9ozQ7eNfvlJ+Lyq9tBa9fqx+/O8cP/+z9hz/UjxW311q13J96XxbxLtdHvPL78IX1fVHlqrXj8xnt6/EW9vz/7/kT7suX60+DXe51HTR81vc7WuN77ol9+E76tqD61Vr58Y77z4fmuJee+1vrPu8yXrOHvv9eDVYvr8RqmNr99Te/5XNs6eNXFpjRr98odwu6r20Fr1+smtY89+SrX1Yu25f2282K/NtST+Vu5ef0fBq8X0+Y1SG997T225D9s4ds+m+tyas1Sb0ho1+uVP4deq2kNr1esnt461e6nkjuPF2nP/2ng9+zeV+7VD7qye4Xv2XO+px1rUxh/xLou+V5TWqNEvfwt3q2oPrVWvn9w6osaPnG9U7gG0v+V8z57rPfVYi9r4I95l0feK0ho1+uW98LCq9tBa9frJrSNq/Mj5RuUeQPtbzvfsud5Tj7WojT/iXRZ9ryitUaNf3iq0h7ao9fTcOqLGj5xvVO4BtL/lfM+e6z31WIva+CPeZdH3itIaNfqlbq89tEWtp+fWETV+5Hyjcg+g/S3ne6nzHKU2/oh3WfS9orRGvatoH3//R/irtNaXEfPgxULONyr3ANrfcr6XOs9RauOPeJdF3ytKa9SHivajfBkxD14s5Hyjcg+g/a3U92Zp6rvR49tzPnNjbGlvfbdWa3159PiR843KPYD2t1Lfm6Wp70aPb8/5zI2xtf0e64saP3K+UbkHZvtdqq6KGsexZ/wSD5k9P0hNzcPsvHruUbPubXvmHpjtd1Qq4h6FjofIPdBb11CpKB3d597918Zv0X95Bmxi
+  </data>
+ </layer>
+ <objectgroup name="brick">
+  <object id="164" x="543.333" y="271.667" width="642" height="30.6667"/>
+  <object id="193" x="3825" y="48" width="14" height="254"/>
+  <object id="224" x="577" y="240" width="62" height="29"/>
+  <object id="227" x="1085" y="242" width="66" height="30"/>
+  <object id="230" x="1441" y="274" width="64" height="25"/>
+  <object id="231" x="1872" y="272" width="112" height="30"/>
+  <object id="233" x="1984" y="239" width="481" height="63"/>
+  <object id="234" x="2465" y="272" width="94" height="30"/>
+  <object id="236" x="2030" y="206" width="401" height="32"/>
+  <object id="237" x="2064" y="176" width="48" height="29"/>
+  <object id="239" x="2352" y="176" width="49" height="30"/>
+  <object id="241" x="2897" y="272" width="79" height="29"/>
+  <object id="243" x="3346" y="273" width="63" height="29"/>
+  <object id="244" x="3649" y="273" width="80" height="30"/>
+  <object id="262" x="0" y="0" width="16" height="304"/>
+  <object id="263" x="3824" y="0" height="304"/>
+  <object id="264" x="0" y="-1.33333" width="3840" height="16"/>
+ </objectgroup>
+ <objectgroup name="ground">
+  <object id="16" x="-8" y="304" width="3840" height="178"/>
+  <object id="75" x="3832" y="304" width="14" height="168"/>
+ </objectgroup>
+ <objectgroup name="goombas">
+  <object id="246" x="672" y="241" width="31" height="31"/>
+  <object id="247" x="1009" y="239" width="32" height="30"/>
+  <object id="249" x="1248" y="271" width="33" height="33"/>
+  <object id="250" x="1537" y="273" width="31" height="31"/>
+  <object id="251" x="1791" y="272" width="34" height="32"/>
+  <object id="253" x="2143" y="176" width="33" height="29"/>
+  <object id="254" x="2288" y="176" width="32" height="29"/>
+  <object id="255" x="2592" y="272" width="31" height="32"/>
+  <object id="256" x="2801" y="273" width="31" height="30"/>
+  <object id="257" x="2993" y="273" width="32" height="30"/>
+  <object id="258" x="3232" y="272" width="33" height="32"/>
+  <object id="261" x="3489" y="271" width="30" height="32"/>
+ </objectgroup>
+</map>

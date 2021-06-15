@@ -1,0 +1,26 @@
+
+input1.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+little
+  rotate: false
+  xy: 2, 2
+  size: 155, 49
+  orig: 155, 49
+  offset: 0, 0
+  index: -1
+goomba
+  rotate: false
+  xy: 2, 53
+  size: 144, 65
+  orig: 144, 65
+  offset: 0, 0
+  index: -1
+bullet
+  rotate: false
+  xy: 159, 2
+  size: 40, 10
+  orig: 40, 10
+  offset: 0, 0
+  index: -1

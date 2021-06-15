@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="240" height="30" tilewidth="16" tileheight="16" nextobjectid="165">
+ <tileset firstgid="1" name="Без имени-4 - копия" tilewidth="16" tileheight="16" tilecount="1081" columns="47">
+  <image source="Без имени-4 - копия.jpg" width="754" height="377"/>
+ </tileset>
+ <tileset firstgid="1082" name="Без имени-3 - копия" tilewidth="16" tileheight="16" tilecount="22" columns="2">
+  <image source="Без имени-3 - копия.jpg" width="40" height="177"/>
+ </tileset>
+ <tileset firstgid="1104" name="right" tilewidth="16" tileheight="16" tilecount="16" columns="4">
+  <image source="right.jpg" width="74" height="67"/>
+ </tileset>
+ <tileset firstgid="1120" name="Без имени-5" tilewidth="16" tileheight="16" tilecount="16" columns="4">
+  <image source="Без имени-5.jpg" width="70" height="65"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="240" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztl0luwzAMRZ007aE6z/Nw/9tUXRQIGLKVaZFSgrd4eIuA+patgOJqmqYVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA7A2nm2k62+z6UHMBDonz8p+52Oz6UHMB9gGrv0lfFq4U19Z77c3t/V4BMrD6m/R14UZxbb3X3tze71VjPcAzwPxvdlQoR2qY2XHbVn+Tvi3cKa6t99qbO2Jf9t5BRjm/x4WTGfuS6/zyX17P/f61/1Fmx21b/U36vvCguLbea29udl9eV+C9g4xyfq3/75znXm/Z4uf36LnMY9kjsvM0W/1N+rHwpLi23mtvbq95vcVdJ/ucRO1rybrRc5nHskdk52m2+pv0c+FFcW29197cXvN6i7tO9jmJ2teSdaPnMo9lj8jO02z1N+nXwpvi2nqvvbm95vUWd53scxK1ryXrRs9lHssekZ2n2epv0u+FD8W19V57c3vN6y3uOtnnJGpfS9aNnss8lj0iO0+z1d+kPwtfimvrvfbm9prXW9x1ss9J1L6WrBs9l3kse0R2nmarv1mWOXPrvZ6b22teb3HXyT4nUftasm70XOax7BHZeZqt/mZZ5syt93pubq95vcVdJ/ucRO1rybrRc5nHskdk51nu/V5GmptH+B779n0injt6LvNY9ojsPMu938tIc/MI32Pfvk/Ec2fNZRjj9s6ayzDG7f0NrANftQ==
+  </data>
+ </layer>
+ <objectgroup name="brick" offsetx="0" offsety="1">
+  <object id="101" name="6" x="2049.68" y="271.727" width="94.1364" height="32.5455"/>
+  <object id="118" name="7" x="2640" y="272" width="225.333" height="30"/>
+  <object id="125" name="9" x="3" y="-1" width="13" height="303"/>
+  <object id="126" name="10" x="3825" y="0" width="14" height="303"/>
+  <object id="133" name="1" x="592.5" y="271.5" width="64" height="31.5"/>
+  <object id="135" name="8" x="3504.67" y="271.667" width="95.3333" height="31.3333"/>
+  <object id="136" name="2" x="1040" y="270.333" width="144.667" height="32.6667"/>
+  <object id="138" name="3" x="1184" y="240.333" width="865" height="64"/>
+  <object id="139" name="4" x="1344" y="208.585" width="97.1667" height="31.4956"/>
+  <object id="140" name="5" x="1825.33" y="205.667" width="93.6667" height="34.6667"/>
+  <object id="164" x="3" y="-1" width="3840" height="16"/>
+ </objectgroup>
+ <objectgroup name="ground">
+  <object id="16" x="-8" y="304" width="3840" height="168"/>
+  <object id="75" x="3832" y="304" width="14" height="168"/>
+ </objectgroup>
+ <objectgroup name="goombas">
+  <object id="110" name="4" x="2272" y="272" width="32" height="32"/>
+  <object id="111" name="5" x="2480" y="272" width="31" height="31"/>
+  <object id="112" name="6" x="2958" y="272" width="35" height="30"/>
+  <object id="124" name="7" x="3199.82" y="271.818" width="32.1818" height="32"/>
+  <object id="128" name="1" x="704" y="272" width="32" height="31.5"/>
+  <object id="141" name="2" x="1457.33" y="208" width="32" height="32"/>
+  <object id="142" name="3" x="1712" y="208" width="32" height="32"/>
+ </objectgroup>
+</map>
