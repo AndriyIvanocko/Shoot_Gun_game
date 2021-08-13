@@ -18,7 +18,7 @@ import com.mygdx.my_game.MyGame;
  */
 public class Hud implements Disposable {
     public Stage stage;
-    private Viewport viewport;
+    private final Viewport viewport;
     public static int health = 100;
     public static int world = 1;
     public static int level = 1;
@@ -27,8 +27,8 @@ public class Hud implements Disposable {
 
     private static Label heathLabel;
     private static Label levelLabel;
-    private Label heroLabel;
-    private Label worldLabel;
+    private final Label heroLabel;
+    private final Label worldLabel;
 
     public Hud(SpriteBatch spriteBatch) {
 

@@ -20,10 +20,10 @@ import com.mygdx.my_game.Seenc.Hud;
  */
 
 public class GameOverScreen implements Screen {
-    private Viewport viewport;
-    private Stage stage;
+    private final Viewport viewport;
+    private final Stage stage;
 
-    private MyGame game;
+    private final MyGame game;
 
     public GameOverScreen(MyGame game) {
         this.game = game;
