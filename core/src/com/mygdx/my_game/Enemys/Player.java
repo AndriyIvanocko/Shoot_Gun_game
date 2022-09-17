@@ -15,26 +15,19 @@ import com.mygdx.my_game.MyGame;
  */
 
 public class Player extends Enemy {
+    private final Array<TextureRegion> frames = new Array<>();
+    private final Animation animation = new Animation(0.2f,frames);
+    public boolean isDestroy = false;
+    public boolean destroyed = false;
+    private int hitCount = 0;
     private float stateTime = 0;
-    private Animation animation;
-    private Array<TextureRegion> frames;
-    public boolean setDestroy;
-    public boolean destroyed;
-    int k = 0;
 
     public Player( Touch_Control control, float x, float y) {
         super(control,x, y);
-        frames = new Array<TextureRegion>();
-
-        for (int i = 0; i < 2;i++)
-        {
+        for (int i = 0; i < 2; i++) {
             frames.add(new TextureRegion(control.getAtlas().findRegion("goomba"),i * 72, 0, 65, 65));
         }
-        animation = new Animation(0.2f,frames);
-        stateTime = 0;
         setBounds(getX(),getY(),36,36);
-        setDestroy = false;
-        destroyed = false;
     }
 
     @Override
@@ -64,15 +57,15 @@ public class Player extends Enemy {
 
     @Override
     public void onHit() {
-        k++;
-        if(k == 6) {
-            setDestroy = true;
+        hitCount++;
+        if(hitCount == 6) {
+            isDestroy = true;
         }
     }
 
     public void update(float dt) {
         stateTime += dt;
-        if(setDestroy && !destroyed){
+        if(isDestroy && !destroyed){
             world.destroyBody(body2);
             destroyed = true;
             stateTime = 0;
