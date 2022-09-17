@@ -26,7 +26,7 @@ public class WorldRender {
             new Ground(control,rectangle);
         }
 
-        goombas = new Array<>();
+        goombas = new Array<Player>();
         for (MapObject object : map.getLayers().get(3).getObjects().getByType(RectangleMapObject.class)) {
             Rectangle rectangle = ((RectangleMapObject) object).getRectangle();
             goombas.add(new Player(control,rectangle.getX(),rectangle.getY()));

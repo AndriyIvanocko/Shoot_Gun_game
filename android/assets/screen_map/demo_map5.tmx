@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="240" height="30" tilewidth="16" tileheight="16" nextobjectid="231">
- <tileset firstgid="1" name="Без имени-4 - копия" tilewidth="16" tileheight="16" tilecount="1081" columns="47">
-  <image source="Без имени-4 - копия.jpg" width="754" height="377"/>
+ <tileset firstgid="1" name="sand_map" tilewidth="16" tileheight="16" tilecount="1081" columns="47">
+  <image source="sand_map.jpg" width="754" height="377"/>
  </tileset>
- <tileset firstgid="1082" name="Без имени-3 - копия" tilewidth="16" tileheight="16" tilecount="22" columns="2">
-  <image source="Без имени-3 - копия.jpg" width="40" height="177"/>
+ <tileset firstgid="1082" name="ground" tilewidth="16" tileheight="16" tilecount="22" columns="2">
+  <image source="ground.jpg" width="40" height="177"/>
  </tileset>
  <tileset firstgid="1104" name="right" tilewidth="16" tileheight="16" tilecount="16" columns="4">
   <image source="right.jpg" width="74" height="67"/>
  </tileset>
- <tileset firstgid="1120" name="Без имени-5" tilewidth="16" tileheight="16" tilecount="16" columns="4">
-  <image source="Без имени-5.jpg" width="70" height="65"/>
+ <tileset firstgid="1120" name="shoot_button" tilewidth="16" tileheight="16" tilecount="16" columns="4">
+  <image source="shoot_button.jpg" width="70" height="65"/>
  </tileset>
  <layer name="Tile Layer 1" width="240" height="30">
   <data encoding="base64" compression="zlib">

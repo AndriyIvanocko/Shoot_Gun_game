@@ -13,12 +13,14 @@ import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.Viewport;
 import com.mygdx.my_game.MyGame;
 
+import java.util.Locale;
+
 /**
  * Created by Android on 22.09.2016.
  */
 public class Hud implements Disposable {
     public Stage stage;
-    private final Viewport viewport;
+    private Viewport viewport;
     public static int health = 100;
     public static int world = 1;
     public static int level = 1;
@@ -27,8 +29,8 @@ public class Hud implements Disposable {
 
     private static Label heathLabel;
     private static Label levelLabel;
-    private final Label heroLabel;
-    private final Label worldLabel;
+    private Label heroLabel;
+    private Label worldLabel;
 
     public Hud(SpriteBatch spriteBatch) {
 
@@ -41,9 +43,9 @@ public class Hud implements Disposable {
         table.top();
         table.setFillParent(true);
 
-        heathLabel = new Label(String.format("%03d",health), new Label.LabelStyle(new BitmapFont(), Color.WHITE));
+        heathLabel = new Label(String.format(Locale.US, "%03d",health), new Label.LabelStyle(new BitmapFont(), Color.WHITE));
         heroLabel = new Label("HEALTH", new Label.LabelStyle(new BitmapFont(), Color.WHITE));
-        levelLabel = new Label(String.format("%01d - 3",world), new Label.LabelStyle(new BitmapFont(), Color.WHITE));
+        levelLabel = new Label(String.format(Locale.US, "%01d - 3",world), new Label.LabelStyle(new BitmapFont(), Color.WHITE));
         worldLabel = new Label("WORLD", new Label.LabelStyle(new BitmapFont(), Color.WHITE));
 
 
@@ -64,17 +66,17 @@ public class Hud implements Disposable {
 
     public static void healthBar(int value){
         health -= value;
-        heathLabel.setText(String.format("%03d",health));
+        heathLabel.setText(String.format(Locale.US, "%03d",health));
     }
 
     public static void levelWorld(int value){
         world = value;
-        levelLabel.setText(String.format("%01d - 3",world));
+        levelLabel.setText(String.format(Locale.US, "%01d - 3",world));
     }
 
     public static void setHealth(int value){
         health = value;
-        heathLabel.setText(String.format("%03d",health));
+        heathLabel.setText(String.format(Locale.US, "%03d",health));
 
     }
 
