@@ -14,7 +14,7 @@ import com.mygdx.my_game.MyGame;
  * Created by Android on 16.11.2016.
  */
 
-public class Player extends Enemy {
+public class EnemyPlayer extends Enemy {
     private final Array<TextureRegion> frames = new Array<>();
     private Animation animation;
     public boolean isDestroy = false;
@@ -22,10 +22,10 @@ public class Player extends Enemy {
     private int hitCount = 0;
     private float stateTime = 0;
 
-    public Player(Touch_Control control, float x, float y) {
+    public EnemyPlayer(Touch_Control control, float x, float y) {
         super(control, x, y);
         for (int i = 0; i < 2; i++) {
-            frames.add(new TextureRegion(control.getAtlas().findRegion("goomba"), i * 72, 0, 65, 65));
+            frames.add(new TextureRegion(control.getAtlas().findRegion("goombas"), i * 72, 0, 65, 65));
         }
         animation = new Animation(0.2f, frames);
         setBounds(getX(), getY(), 36, 36);

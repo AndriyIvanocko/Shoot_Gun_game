@@ -30,22 +30,21 @@ public class Touch_Control {
     private final float SHOOT_TIMER = 0.25f;
     private float shoot = 0;
 
-    //create multi touch controller
+    //Multi touch controller
     private Rectangle leftButton,rightButton,upButton,shootButton,touch;
     private Sprite leftSprite,rightSprite,upSprite,shootSprite,downSprite;
     private Sprite left,right,up,shooting;
     private Texture buttonTexture;
 
-    //to create world and render
+    //variable for world and render
     private World world;
     private Box2DDebugRenderer bd2render;
     private TiledMap map;
     private WorldRender render;
-    //to create player and enemy and bullet
+    //Hero, bullet
     private Hero hero;
     private TextureAtlas buttonAtlas;
-//    private Array<Player> player;
-    private ArrayList<Bullet> bullets;
+    private final ArrayList<Bullet> bullets = new ArrayList<>();
 
     public Touch_Control(TiledMap map) {
         buttonAtlas = new TextureAtlas(Gdx.files.internal("resource/my_game"));
@@ -55,8 +54,6 @@ public class Touch_Control {
         bd2render = new Box2DDebugRenderer();
         bd2render.setDrawBodies(false);
         render = new WorldRender(this);
-
-        bullets = new ArrayList<Bullet>();
 
         hero = new Hero(world, this);
 
@@ -228,7 +225,6 @@ public class Touch_Control {
             shooting.setY(hero.body.getPosition().y - 160);
         }
         if(hero.body.getPosition().x > 3430){
-
             leftButton.x = (3145);
             leftButton.y = (int) (hero.body.getPosition().y - 130);
             left.setX(3070);
@@ -302,28 +298,15 @@ public class Touch_Control {
         bd2render.dispose();
     }
 
-    public TiledMap getMap(){
-        return map;
+    public TiledMap getMap(){ return map; }
 
-    }
-
-    public World getWorld(){
-
-        return world;
-
-    }
+    public World getWorld(){ return world; }
 
     public boolean isGameOver(){
-        if(Hud.health <= 0){
-            return true;
-        }
-        return false;
+        return Hud.health <= 0;
     }
 
     public boolean isFindPosition(){
-        if(hero.body.getPosition().x >= 3700 && hero.getStateTimer() > 3 ) {
-            return true;
-        }
-        return false;
+        return hero.body.getPosition().x >= 3700 && hero.getStateTimer() > 3;
     }
 }

@@ -5,7 +5,7 @@ import com.badlogic.gdx.maps.objects.RectangleMapObject;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.utils.Array;
-import com.mygdx.my_game.Enemys.Player;
+import com.mygdx.my_game.Enemys.EnemyPlayer;
 import com.mygdx.my_game.Multi_touch.Touch_Control;
 
 /**
@@ -13,7 +13,7 @@ import com.mygdx.my_game.Multi_touch.Touch_Control;
  */
 
 public class WorldRender {
-    private Array<Player> goombas;
+    private final Array<EnemyPlayer> goombas = new Array<>();
     public WorldRender(Touch_Control control) {
         TiledMap map = control.getMap();
         for (MapObject object : map.getLayers().get(1).getObjects().getByType(RectangleMapObject.class)) {
@@ -26,14 +26,13 @@ public class WorldRender {
             new Ground(control,rectangle);
         }
 
-        goombas = new Array<Player>();
         for (MapObject object : map.getLayers().get(3).getObjects().getByType(RectangleMapObject.class)) {
             Rectangle rectangle = ((RectangleMapObject) object).getRectangle();
-            goombas.add(new Player(control,rectangle.getX(),rectangle.getY()));
+            goombas.add(new EnemyPlayer(control,rectangle.getX(),rectangle.getY()));
         }
     }
 
-    public Array<Player> getGoombas() {
+    public Array<EnemyPlayer> getGoombas() {
         return goombas;
     }
 }
